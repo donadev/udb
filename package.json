@@ -1,12 +1,15 @@
 {
   "name": "udblib",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "Universal Debug Bridge: Control your iOS Simulators and Android Emulators via cli",
-  "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "brew install facebook/fb/idb-companion cliclick pipx && pipx install fb-idb"
   },
+
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/donadev/udb.git"

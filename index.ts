@@ -76,7 +76,7 @@ export const getOpenSimulatorId = async (platform: Platform) => {
  * @returns A promise that resolves with a boolean indicating if the simulator is booted
  */
 export const isSimulatorBooted = async (id: string, platform: Platform) => {
-    return cli(commands.isSimulatorBooted(id), platform)
+    return await cli(commands.isSimulatorBooted(id), platform) == "true"
 }
 
 /**
@@ -115,5 +115,5 @@ export const getAvailableSimulators = async (platform: Platform) => {
  * @returns A promise that resolves with a boolean indicating if the app is installed
  */
 export const isAppInstalled = async (appId: string, platform: Platform) => {
-    return cli(commands.isAppInstalled(appId), platform)
+    return await cli(commands.isAppInstalled(appId), platform) == "true"
 }
