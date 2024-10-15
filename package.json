@@ -1,6 +1,6 @@
 {
   "name": "mobile-udb",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Universal Debug Bridge: Control your iOS Simulators and Android Emulators via cli",
   "main": "index.js",
   "scripts": {
