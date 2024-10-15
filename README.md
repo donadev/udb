@@ -1,10 +1,10 @@
-# xdb
+# udb - Universal Debug Bridge
 
-Control your iOS and Android simulators via CLI
+Control iOS Simulators and Android Emulators from an unified interface.
 
 ## Description
 
-xdb is a powerful command-line interface tool that allows you to control and interact with iOS and Android simulators. It provides a unified interface for common tasks such as taking screenshots, starting and terminating apps, simulating user input, and managing simulator instances.
+udb is a powerful command-line interface tool that allows you to control and interact with iOS and Android simulators. It provides a unified interface for common tasks such as taking screenshots, starting and terminating apps, simulating user input, and managing simulator instances.
 
 ## Features
 
@@ -17,27 +17,19 @@ xdb is a powerful command-line interface tool that allows you to control and int
 
 ## Installation
 
-To install xdb, follow these steps:
+To install udb, follow these steps:
 
 1. Ensure you have Node.js version 14.0.0 or higher installed on your macOS system.
-2. Clone the repository:
+2. Install the package from npm:
    ```
-   git clone https://github.com/donadev/xdb.git
-   ```
-3. Navigate to the project directory:
-   ```
-   cd xdb
-   ```
-4. Install the dependencies:
-   ```
-   npm install
+   npm install mobile-udb
    ```
 
 Note: The postinstall script will automatically install additional required tools using Homebrew and pipx.
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to xdb, please follow these steps:
+Contributions are welcome! If you'd like to contribute to udb, please follow these steps:
 
 1. Fork the repository
 2. Create a new branch for your feature or bug fix
