@@ -1,6 +1,6 @@
 {
-  "name": "mobile-udb",
-  "version": "0.1.0",
+  "name": "udblib",
+  "version": "0.1.1",
   "description": "Universal Debug Bridge: Control your iOS Simulators and Android Emulators via cli",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/donadev/xdb.git"
+    "url": "git+https://github.com/donadev/udb.git"
   },
   "keywords": [
     "cli",
@@ -20,9 +20,9 @@
   "author": "Luigi Donadel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/donadev/xdb/issues"
+    "url": "https://github.com/donadev/udb/issues"
   },
-  "homepage": "https://github.com/donadev/xdb#readme",
+  "homepage": "https://github.com/donadev/udb#readme",
   "dependencies": {
     "idb": "^7.0.0"
   },

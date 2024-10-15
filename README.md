@@ -22,7 +22,7 @@ To install udb, follow these steps:
 1. Ensure you have Node.js version 14.0.0 or higher installed on your macOS system.
 2. Install the package from npm:
    ```
-   npm install mobile-udb
+   npm install udblib
    ```
 
 Note: The postinstall script will automatically install additional required tools using Homebrew and pipx.
