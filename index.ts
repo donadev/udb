@@ -117,3 +117,13 @@ export const getAvailableSimulators = async (platform: Platform) => {
 export const isAppInstalled = async (appId: string, platform: Platform) => {
     return await cli(commands.isAppInstalled(appId), platform) == "true"
 }
+
+/**
+ * Press a specific key given the keycode
+ * @param code The code of the key to press
+ * @param platform The target platform (iOS or Android)
+ * @returns A promise that resolves with the command output
+ */
+export const pressKey = async (code: number, platform: Platform) => {
+    return cli(commands.pressKey(code), platform)
+}

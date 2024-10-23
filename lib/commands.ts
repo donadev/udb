@@ -52,7 +52,13 @@ const commands: {
     isAppInstalled: (appId: string): CommandMap => ({
         ios: `if idb list-apps | grep -q "${appId}"; then echo true; else echo false; fi`,
         android: `if adb shell pm list packages | grep -q "${appId}"; then echo true; else echo false; fi`
-    })
+    }),
+    pressKey: (code: number): CommandMap => {
+        return {
+            "ios": `idb ui key ${code}`,
+            "android": `adb shell input keyevent ${code}`
+        }
+    },
 };
 
 export default commands;
