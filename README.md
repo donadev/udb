@@ -11,7 +11,7 @@ udb is a powerful command-line interface tool that allows you to control and int
 - Cross-platform support for iOS and Android simulators
 - Screenshot capture
 - App management (start, terminate)
-- Simulated user input (tap, text input)
+- Simulated user input (tap, text input, key press)
 - Simulator management (boot, connect, check status)
 - Retrieve simulator information
 
