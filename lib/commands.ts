@@ -27,7 +27,7 @@ const commands: {
     }),
     input: (text: string): CommandMap => ({
         ios: `idb focus && cliclick t:"${text}"`,
-        android: `adb shell input text $(echo "${text}" | sed 's/ /\%s/g')`
+        android: `adb shell input text $(echo '${text.replace("'", "\'")}' | sed 's/ /\%s/g')`
     }),
     getOpenSimulatorId: (): CommandMap => ({
         ios: "idb list-targets  | awk -F '[|()]' '/Booted/ {print $2}' | head -n 1",

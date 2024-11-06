@@ -1,6 +1,6 @@
 {
   "name": "udblib",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Universal Debug Bridge: Control your iOS Simulators and Android Emulators via cli",
   "scripts": {
     "build": "tsc",
